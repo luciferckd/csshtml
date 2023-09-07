@@ -1,0 +1,153 @@
+#css
+/* || RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: pink;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* || GENERAL STYLES */
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font: 1.5rem "Nunito", sans-serif;
+    min-height: 100vh;
+    background-color: rgb(185, 88, 104);
+    background-image: radial-gradient(whitesmoke, pink);
+    display: flex;
+    flex-direction: column;
+}
+header,
+footer{
+    position: sticky;
+    background-color: radial-gradient(whitesmoke, pink);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+footer{
+    background-color: rgb(211, 142, 153);
+}
+header{
+    top: 0;
+}
+
+last{
+    background-color: rgb(228, 19, 54);
+}
+
+nav{
+    background-color: rgb(255, 177, 220);
+    padding: 0.5rem;
+    border-bottom: 2px solid lightpink;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-evenly
+}
+
+nav a,
+nav a:visited{
+    color: black;
+}
+a{
+    color: rgb(228, 23, 159);
+}
+nav a:hover,
+nav a:focus{
+    color: hsl(320, 100%, 47%);
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+figcaption{
+    text-align: center;
+}
+
+footer{
+    bottom: 0;
+}
+
+/* || cake card */
+.card{
+    scroll-margin-top: 8rem;
+    width: min(100%, 350px);
+    background-color: pink;
+    border: 2px solid #e59393;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card figure{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card img{
+    border: 5px double  #e48585;
+    border-radius: 50%;
+}
+
+.card figcaption{
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+
+
+/* || small */
+@media screen and (min-width: 576px) {
+    main{
+        justify-content: center;
+        flex-flow: row wrap;
+        padding: 1rem;
+    }
+
+    .card{
+        width: min(100%, 400px);
+    }
+
+    .card:last-child{
+        order: -1;
+    }
+}
+
+
+/* || medium 
+@media screen and (min-width: 768px) {
+    nav{
+        display: none;
+    }
+
+    .card{
+        width: min(100%, 375px);
+    }
+    .card figure{
+        flex-flow: column-reverse;
+    }
+
+    .card p{ 
+        margin-top: 1rem;
+    }
+}  */
+    
