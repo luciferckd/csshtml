@@ -20,7 +20,7 @@ html{
 }
 
 body{
-    font: 1.5rem "Nunito", sans-serif;
+    font: 1.6rem "Nunito", sans-serif;
     min-height: 100vh;
     background-color: rgb(185, 88, 104);
     background-image: radial-gradient(whitesmoke, pink);
