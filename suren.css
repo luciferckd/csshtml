@@ -133,7 +133,7 @@ footer{
 }
 
 
-/* || medium 
+ /* || medium */
 @media screen and (min-width: 768px) {
     nav{
         display: none;
@@ -149,5 +149,5 @@ footer{
     .card p{ 
         margin-top: 1rem;
     }
-}  */
+}  
     
